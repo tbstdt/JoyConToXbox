@@ -1,0 +1,59 @@
+# ESP-IDF
+build/
+sdkconfig.old
+
+# Артефакты сборки
+*.bin
+*.elf
+*.map
+*.a
+*.so
+*.dylib
+*.dll
+
+# Временные файлы компиляции
+*.o
+*.obj
+*.d
+*.su
+*.lst
+*.sym
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+*.cmake
+!CMakeLists.txt
+
+# Файлы отладки и логи
+*.log
+*.out
+*.tmp
+
+# Файлы Python
+*.py[cod]
+__pycache__/
+*.egg-info/
+dist/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+.directory
+
+# Прочие временные файлы
+*.bak
+*.backup
+*.orig
