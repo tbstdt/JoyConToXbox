@@ -1,0 +1,31 @@
+idf_component_register(
+    SRCS 
+        "main.c"
+        "joycon/joycon_manager.c"
+        "joycon/joycon_parser.c"
+        "joycon/bt_classic/joycon_bt_classic.c"
+        "joycon/bt_classic/joycon_bt_classic_state.c"
+        "joycon/bt_classic/joycon_bt_classic_discovery.c"
+        "joycon/bt_classic/joycon_bt_classic_scan.c"
+        "joycon/bt_classic/joycon_bt_classic_connection.c"
+        "joycon/bt_classic/joycon_bt_classic_l2cap.c"
+        "xbox/xbox_emulator.c"
+        "ble_hid/ble_hid.c"
+        "status/status_led.c"
+    INCLUDE_DIRS 
+        "."
+        "joycon"
+        "joycon/bt_classic"
+        "xbox"
+        "ble_hid"
+        "status"
+        "common"
+    REQUIRES 
+        driver
+        bt
+        nvs_flash
+        freertos
+    PRIV_REQUIRES
+        esp_driver_rmt
+        esp_driver_gpio
+)
